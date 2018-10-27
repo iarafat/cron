@@ -5,7 +5,7 @@ Cron jobs will select a random word from the console command WordOfTheDay class 
 ##### For local testing
 * git clone https://github.com/iarafat/cron.git
 * composer install
-* cp .env.example .env (Put DB and Mail credential)
+* cp .env.example .env (Put DB and Mail credential (https://mailtrap.io/))
 * php artisan key:generate
 * php artisan migrate:fresh --seed
 * (* * * * * php /full_path/cron/artisan schedule:run >> /dev/null 2>&1
